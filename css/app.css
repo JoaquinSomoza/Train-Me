@@ -1,0 +1,212 @@
+/* vista desktop */
+@media only screen and (min-width:1024px) {
+    .encabezado__titulo{
+        margin: 1rem 0;
+    }
+    
+    .section__textPrincipal{
+        text-align: center;
+         padding-top: 4rem;
+         padding-left: 2rem;
+    }
+     .section__textSecundario{
+        text-align: center;
+        padding-top: 4rem;
+        padding-right: 2rem;
+    }
+     .section__container {
+        padding-left: 5rem;
+    }
+    .carousel-inner{
+        height: 500px;
+    }
+    .encabezado__h2{
+        margin-top: 1rem;
+    }
+    .footer__position{
+        text-align: center;
+        margin-top: 7rem;
+        margin-bottom: 2rem;
+        width: 100%;
+       
+        padding-left: 2rem;
+    
+    }
+}
+
+h1, h2{
+    text-align: center;
+}
+
+a{
+    color: black;
+}
+
+.section__div--mb{
+    margin-bottom: 3rem;
+}
+
+/* modificaciones de links y botones  */
+a:hover{
+    text-decoration: none;
+    transition: 0.5s;
+    color: #8eb9bb;
+}
+.scale:hover{
+    transform: scale(1.1,1.1);
+    transition: 0.5s;
+}
+.radius{
+    border-radius: 5px;
+    border: none;
+}
+.img__radius{
+   border-radius:calc(.25rem - 1px);
+}
+/* Boton de la nav */
+.btnMargin{
+    margin-left: 4rem;
+    margin-top: 0.5rem;
+}
+.btn:hover{
+    background-color: #a8dadc;
+    transition: 0.8s;
+    color: #fff;
+}
+.usuario{
+    height: 2.5rem;   
+}
+::placeholder{
+    text-align: center;
+}
+/* Titulo de los dias */
+.encabezado__titulo--dias{
+    margin-top: 1rem;
+}
+/* Iconos de footer */
+svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    
+}
+
+/* No usar BEM sobre .table ya que es class de bootstrap */
+/* Tablas de dias y glosario */
+.table{
+    margin-top: 2rem;
+    margin-bottom: 5rem; 
+} 
+
+/* css del formulario de inscripcion */
+input:placeholder-shown{ 
+    font-size: 1rem;
+}
+textarea{
+    font-size: 1rem;
+}
+select{ 
+    border: none;
+    height: 1.5rem;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+}
+input{
+    border: none;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 0.3rem;
+}
+.inscripcion__input--tamaño{
+    height: 2rem;
+}
+
+.inscripcion__ubicacion--checkbox{
+    text-align: center;
+    font-size: 1.2rem;
+    list-style: none;
+    margin-top: 0.5rem;
+}
+.inscripcion__contenedor--ubicacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.inscripcion__contenedor--interior{
+    background-color: #a8dadc;
+    width: 40rem;
+    height: 42rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.inscripcion__ubicacionForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem; 
+}
+
+
+
+
+/* modificaciones de vista tablet */
+@media only screen and (min-width: 768px) and (max-width:1023px){
+    iframe{
+        width: 400px;
+        height: 200px;
+    }
+    .footer__position{
+        justify-content: space-around;
+        width: 100%;
+        padding-left: 2rem;
+    }
+}
+
+/* modificaciones de vista mobile */
+@media only screen and (max-width: 768px){
+    .navbar-toggler{
+        justify-content: flex-start;
+    }
+    .section__textPrincipal{
+        padding: 2rem 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .section__textSecundario{
+        padding: 2rem 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .section__container{
+        display: flex;
+        justify-content: center;
+    }
+    
+     /* No usar BEM sobre .table ya que es class de bootstrap */
+     .table{
+         margin-top: 1rem;
+         margin-bottom: 2rem;
+     }
+     iframe{
+         width: 100px;
+         height: 100px;
+     }
+     .inscripcion__contenedor--interior{
+         height: 44rem;
+     }
+     .scale:hover{
+        transform: scale(1,1.1);
+        transition: 0.5s;
+    }
+    .footer__position{
+       margin-top: 2rem;
+       margin-bottom: 2rem;
+    }
+    
+}
+
