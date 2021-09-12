@@ -221,9 +221,7 @@ input{
         margin-top: 1rem;
         margin-bottom: 2rem;
     }
-    .width__table--dias{
-        width: 50%;
-    }
+    
     iframe{
         width: 100px;
         height: 100px;
@@ -240,6 +238,9 @@ input{
         width: 100%;
         margin-top: 2rem;
         margin-bottom: 2rem;
+    }
+    .container-sm{
+        width: 90%;
     }
 }
 
