@@ -3,7 +3,6 @@
     .encabezado__titulo{
         margin: 1rem 0;
     }
-    
     .section__textPrincipal{
         text-align: center;
          padding-top: 4rem;
@@ -35,11 +34,9 @@
 h1, h2{
     text-align: center;
 }
-
 a{
     color: black;
 }
-
 .section__div--mb{
     margin-bottom: 3rem;
 }
@@ -49,13 +46,11 @@ a{
     justify-content: center;
 }
 
-
 /* modificaciones de links y botones  */
 a:hover{
     text-decoration: none;
     transition: 0.5s; 
     color: #8eb9bb; 
- 
 }
 .hover__encabezado--index:hover{
    color: #000;
@@ -182,9 +177,7 @@ input{
         height: 200px;
     }
     .footer__position{
-        justify-content: space-around;
-        width: 100%;
-        padding-left: 2rem;
+        padding-left: 5rem;
         margin-bottom: 2rem;
     }
     .encabezado__inscripcion--index{
@@ -220,6 +213,7 @@ input{
     .table{
         margin-top: 1rem;
         margin-bottom: 2rem;
+        font-size: 14px;
     }
     
     iframe{
@@ -234,13 +228,11 @@ input{
         transition: 0.5s;
     }
     .footer__position{
-        justify-content: space-around;
-        width: 100%;
         margin-top: 2rem;
         margin-bottom: 2rem;
+        margin-right: 0.5rem;
+        text-align: end;
     }
-    .container-sm{
-        width: 90%;
-    }
+    
 }
 
