@@ -28,9 +28,7 @@
         margin-top: 7rem;
         margin-bottom: 2rem;
         width: 100%;
-       
         padding-left: 2rem;
-    
     }
 }
 
@@ -45,13 +43,38 @@ a{
 .section__div--mb{
     margin-bottom: 3rem;
 }
+.flex__encabezado--index{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 
 /* modificaciones de links y botones  */
 a:hover{
     text-decoration: none;
-    transition: 0.5s;
-    color: #8eb9bb;
+    transition: 0.5s; 
+    color: #8eb9bb; 
+ 
 }
+.hover__encabezado--index:hover{
+   color: #000;
+}
+.encabezado__inscripcion--index{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    border: 1px solid #a8dadc;
+    background-color: white;   
+    border-radius: 15px;
+    padding: .25rem .5rem;    
+}
+.encabezado__inscripcion--index:hover{
+    color: white;
+    border: 1px  solid #a8dadc;
+    border-radius: 15px;
+    box-shadow: 0 0.8em 0.5em -0.5em #99c5c7;
+} 
 .scale:hover{
     transform: scale(1.1,1.1);
     transition: 0.5s;
@@ -63,6 +86,7 @@ a:hover{
 .img__radius{
    border-radius:calc(.25rem - 1px);
 }
+
 /* Boton de la nav */
 .btnMargin{
     margin-left: 4rem;
@@ -70,7 +94,7 @@ a:hover{
 }
 .btn:hover{
     background-color: #a8dadc;
-    transition: 0.8s;
+    transition: 0.5s;
     color: #fff;
 }
 .usuario{
@@ -79,15 +103,16 @@ a:hover{
 ::placeholder{
     text-align: center;
 }
+
 /* Titulo de los dias */
 .encabezado__titulo--dias{
     margin-top: 1rem;
 }
+
 /* Iconos de footer */
 svg{
     width: 1.5rem;
-    height: 1.5rem;
-    
+    height: 1.5rem;   
 }
 
 /* No usar BEM sobre .table ya que es class de bootstrap */
@@ -143,16 +168,12 @@ input{
     flex-direction: column;
     align-items: center; 
 }
-
 .inscripcion__ubicacionForm{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 2rem; 
 }
-
-
-
 
 /* modificaciones de vista tablet */
 @media only screen and (min-width: 768px) and (max-width:1023px){
@@ -164,6 +185,14 @@ input{
         justify-content: space-around;
         width: 100%;
         padding-left: 2rem;
+        margin-bottom: 2rem;
+    }
+    .encabezado__inscripcion--index{
+        margin-bottom: 2.5rem;
+    }
+    .scale:hover{
+        transform: scale(1.009,1.009);
+        transition: 0.5s;
     }
 }
 
@@ -188,25 +217,29 @@ input{
     }
     
      /* No usar BEM sobre .table ya que es class de bootstrap */
-     .table{
-         margin-top: 1rem;
-         margin-bottom: 2rem;
-     }
-     iframe{
-         width: 100px;
-         height: 100px;
-     }
-     .inscripcion__contenedor--interior{
-         height: 44rem;
-     }
-     .scale:hover{
-        transform: scale(1,1.1);
+    .table{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .width__table--dias{
+        width: 90%;
+    }
+    iframe{
+        width: 100px;
+        height: 100px;
+    }
+    .inscripcion__contenedor--interior{
+        height: 44rem;
+    }
+    .scale:hover{
+        transform: scale(1.009,1.009);
         transition: 0.5s;
     }
     .footer__position{
-       margin-top: 2rem;
-       margin-bottom: 2rem;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
-    
 }
 
