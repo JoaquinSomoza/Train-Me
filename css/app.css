@@ -1,7 +1,7 @@
 /* vista desktop */
 @media only screen and (min-width:1024px) {
     .encabezado__titulo{
-        margin: 1rem 0;
+        margin: 5rem 0;
     }
     .section__textPrincipal{
         text-align: center;
@@ -22,13 +22,6 @@
     .encabezado__h2{
         margin-top: 1rem;
     }
-    .footer__position{
-        text-align: center;
-        margin-top: 7rem;
-        margin-bottom: 2rem;
-        width: 100%;
-        padding-left: 2rem;
-    }
 }
 
 h1, h2{
@@ -47,11 +40,6 @@ a{
 }
 
 /* modificaciones de links y botones  */
-a:hover{
-    text-decoration: none;
-    transition: 0.5s; 
-    color: #8eb9bb; 
-}
 .hover__encabezado--index:hover{
    color: #000;
 }
@@ -71,8 +59,9 @@ a:hover{
     box-shadow: 0 0.8em 0.5em -0.5em #99c5c7;
 } 
 .scale:hover{
-    transform: scale(1.1,1.1);
+    transform: scale(1,1.1);
     transition: 0.5s;
+    letter-spacing: 1.5px;
 }
 .radius{
     border-radius: 5px;
@@ -104,10 +93,42 @@ a:hover{
     margin-top: 1rem;
 }
 
+/* hover de las tablas de los dias */
+.table-hover tbody tr:hover{
+    background-color: #a8dadc;
+}
+.dias__ver--hover:hover{
+    color: white;
+    text-decoration: none; 
+    transition: 0.4s;
+}
+
+/* footer de los dias */
+.footer__dias--position{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-left: 0;
+    list-style: none;
+}
+
 /* Iconos de footer */
 svg{
-    width: 1.5rem;
-    height: 1.5rem;   
+    width: 1.7rem;
+    height: 1.7rem;   
+}
+a .bi:hover{
+    color: #8eb9bb;
+    transition: 0.5s; 
+}
+
+.botonUp__footer--dias{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 2rem; 
 }
 
 /* No usar BEM sobre .table ya que es class de bootstrap */
@@ -116,6 +137,12 @@ svg{
     margin-top: 2rem;
     margin-bottom: 5rem; 
 } 
+.encabezado__titulo--glosario{
+    margin-top: 6rem;
+}
+.glosario__section--position{
+    margin-top: 3rem;
+}
 
 /* css del formulario de inscripcion */
 input:placeholder-shown{ 
@@ -140,7 +167,6 @@ input{
 }
 .inscripcion__input--tamaño{
     height: 2rem;
-}
 
 .inscripcion__ubicacion--checkbox{
     text-align: center;
@@ -151,8 +177,7 @@ input{
 .inscripcion__contenedor--ubicacion{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 .inscripcion__contenedor--interior{
     background-color: #a8dadc;
@@ -176,24 +201,23 @@ input{
         width: 400px;
         height: 200px;
     }
-    .footer__position{
-        padding-left: 5rem;
-        margin-bottom: 2rem;
-    }
     .encabezado__inscripcion--index{
         margin-bottom: 2.5rem;
     }
     .scale:hover{
         transform: scale(1.009,1.009);
-        transition: 0.5s;
+        transition: 1s;
+        letter-spacing: 1.5px;
     }
+    
 }
 
 /* modificaciones de vista mobile */
 @media only screen and (max-width: 768px){
     .navbar-toggler{
-        justify-content: flex-start;
+        justify-content: flex-start;  
     }
+   
     .section__textPrincipal{
         padding: 2rem 0;
         text-align: center;
@@ -214,9 +238,12 @@ input{
         margin-top: 1rem;
         margin-bottom: 2rem;
         font-size: 14px;
-        width: 85%;
+        width: 100%;
     }
     
+    .encabezado__titulo--glosario{
+        margin-top: 4rem;
+    }
     iframe{
         width: 100px;
         height: 100px;
@@ -226,14 +253,8 @@ input{
     }
     .scale:hover{
         transform: scale(1.009,1.009);
-        transition: 0.5s;
+        transition: 1s;
+        letter-spacing: 1.5px;
     }
-    .footer__position{
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        margin-right: 0.5rem;
-        text-align: end;
-    }
-    
 }
 
