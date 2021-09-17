@@ -189,14 +189,17 @@ input{
     justify-content: center; 
 }
 .inscripcion__contenedor--interior{
+    margin-bottom: 4rem;
+    margin-top: 2rem;
     background-color: #a8dadc;
     width: 40rem;
-    height: 42rem;
+    padding-bottom:1rem;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center; 
 }
+
 .inscripcion__ubicacionForm{
     display: flex;
     flex-direction: column;
@@ -258,7 +261,13 @@ input{
         height: 100px;
     }
     .inscripcion__contenedor--interior{
-        height: 44rem;
+        width: 80%; 
+    }
+    .inscripcion__ubicacion--checkbox{
+        font-size: 14px;
+    }
+    .inscripcion__textArea{
+        width: 80%;
     }
     .scale:hover{
         transform: scale(1.009,1.009);
