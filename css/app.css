@@ -39,6 +39,9 @@ a{
     flex-direction: row;
     justify-content: center;
 }
+hr{
+    background-color: #a8dadc;
+}
 .footer__index{
     margin-top: 5rem;
     margin-left: 0;
@@ -199,7 +202,6 @@ input{
     flex-direction: column;
     align-items: center; 
 }
-
 .inscripcion__ubicacionForm{
     display: flex;
     flex-direction: column;
@@ -252,7 +254,6 @@ input{
         font-size: 14px;
         width: 100%;
     }
-    
     .encabezado__titulo--glosario{
         margin-top: 4rem;
     }
