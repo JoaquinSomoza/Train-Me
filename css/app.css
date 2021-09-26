@@ -1,36 +1,13 @@
-/* vista desktop */
-@media only screen and (min-width:1024px) {
-    .encabezado__titulo{
-        margin: 5rem 0;
-    }
-    .section__textPrincipal{
-        text-align: center;
-         padding-top: 4rem;
-         padding-left: 2rem;
-    }
-     .section__textSecundario{
-        text-align: center;
-        padding-top: 4rem;
-        padding-right: 2rem;
-    }
-     .section__container {
-        padding-left: 5rem;
-    }
-    .carousel-inner{
-        height: 500px;
-    }
-    .encabezado__h2{
-        margin-top: 1rem;
-    }
-}
-
+/* Css general */
 h1, h2{
     text-align: center;
+}
+h1{
+    font-size: 3.5rem;
 }
 a{
     color: black;
 }
-
 .section__div--mb{
     margin-bottom: 3rem;
 }
@@ -39,13 +16,28 @@ a{
     flex-direction: row;
     justify-content: center;
 }
-hr{
-    background-color: #a8dadc;
-}
-.footer__index{
+.card__index{
     margin-top: 5rem;
     margin-left: 0;
     margin-right: 0;
+}
+
+/* css del footer del index */
+.footer__index{
+    background-color: #d1eeff;
+    border-radius: .25rem;
+    margin-top: 3rem;
+    padding: 1rem ;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+    font-size: 16px;
+}
+.footer__index img{
+    margin-left: 3rem;
+    padding-right: 2rem;
+    padding-top: 0.3rem;
 }
 
 /* modificaciones de links y botones  */
@@ -59,16 +51,18 @@ hr{
     text-align: center;
     font-size: 2.5rem;
     border: 1px solid #a8dadc;
-    background-color: white;   
+    background-color: #a8dadc; 
     border-radius: 15px;
     padding: .25rem .5rem;    
    
 }
 .encabezado__inscripcion--index:hover{
     color: white;
+    background-color: white;
     border: 1px  solid #a8dadc;
     border-radius: 15px;
     box-shadow: 0 0.8em 0.5em -0.5em #99c5c7;
+    
 } 
 .scale:hover{
     transform: scale(1,1.1);
@@ -100,22 +94,15 @@ hr{
     text-align: center;
 }
 
-/* Titulo de los dias */
+/* Css de los distintos dias */
 .encabezado__titulo--dias{
     margin-top: 1rem;
-}
-
-/* hover de las tablas de los dias */
-.table-hover tbody tr:hover{
-    background-color: #a8dadc;
 }
 .dias__ver--hover:hover{
     color: white;
     text-decoration: none; 
     transition: 0.4s;
 }
-
-/* footer de los dias */
 .footer__dias--position{
     display: flex;
     flex-direction: row;
@@ -124,6 +111,10 @@ hr{
     margin-bottom: 3rem;
     padding-left: 0;
     list-style: none;
+}
+
+hr{
+    background-color: #a8dadc;
 }
 
 /* Iconos de footer */
@@ -149,6 +140,10 @@ a .bi:hover{
     margin-top: 2rem;
     margin-bottom: 5rem; 
 } 
+.table-hover tbody tr:hover{
+    background-color: #a8dadc;
+}
+
 .encabezado__titulo--glosario{
     margin-top: 6rem;
 }
@@ -212,14 +207,57 @@ input{
     margin-top: 2rem; 
 }
 
+/* vista desktop */
+@media only screen and (min-width:1024px) {
+    .carousel{
+        margin-top: 4rem;
+    }
+    .encabezado__titulo{
+        margin: 5rem 0;
+    }
+    .section__textPrincipal{
+        text-align: center;
+        padding-top: 4rem;
+        padding-left: 2rem;
+        font-size: 20px;
+    }
+     .section__textSecundario{
+        text-align: center;
+        padding-top: 4rem;
+        padding-right: 2rem;
+        font-size: 20px;
+    }
+     .section__container {
+        padding-left: 5rem;
+    }
+    .carousel-inner{
+        height: 500px;
+    }
+}
+
 /* modificaciones de vista tablet */
 @media only screen and (min-width: 768px) and (max-width:1023px){
+    .encabezado__titulo{
+        margin: 5rem 0;
+        font-size: 3rem;
+    }
+    .section__textPrincipal{
+        padding: 2rem 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .section__textSecundario{
+        padding: 2rem 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
     iframe{
         width: 400px;
         height: 200px;
     }
     .encabezado__inscripcion--index{
         margin-bottom: 2.5rem;
+       
     }
     .scale:hover{
         transform: scale(1.009,1.009);
@@ -234,20 +272,37 @@ input{
     .navbar-toggler{
         justify-content: flex-start;  
     }
-   
+    .carousel{
+        margin-top: 5rem;
+    }
+    .encabezado__titulo{
+        margin-top: 2rem;
+        font-size: 2.5rem;
+    }
     .section__textPrincipal{
-        padding: 2rem 0;
+        padding: 2rem ;
         text-align: center;
         font-size: 1.5rem;
     }
     .section__textSecundario{
-        padding: 2rem 0;
+        padding: 2rem ;
         text-align: center;
         font-size: 1.5rem;
     }
     .section__container{
         display: flex;
         justify-content: center;
+    }
+    .footer__index{
+        display: flex;
+        justify-content: flex-end;
+        text-align: left;
+        font-size: 1.1rem;
+    }
+    .footer__index img{
+        margin-left: 1rem;
+        padding-right: 0rem;
+        padding-top: 0.3rem;
     }
     
      /* No usar BEM sobre .table ya que es class de bootstrap */
@@ -263,6 +318,9 @@ input{
     iframe{
         width: 100px;
         height: 100px;
+    }
+    .encabezado__titulo--inscripcion{
+        font-size: 3.5rem;
     }
     .inscripcion__contenedor--interior{
         width: 80%; 
